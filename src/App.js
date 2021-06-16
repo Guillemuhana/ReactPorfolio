@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { makeStyles } from "@material-ui/core";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import MyWork from "./components/MyWork";
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+
 
 function App() {
+
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Classes.root">
+    
+        <Navbar  /> 
+
+        <About  id="about" dark={true}/>
+
+        <MyWork title="Mis trabajos"id="works"dark={false}/>
+        
+        <Skills title="habilidades"id="skills"dark={true}/>
+
+        <Contact title="Ponerse en contacto"id="contact"dark={false}/>
+        
+        <h6><li>2020 © Copyright MuhanaDesign.  Rights Reserved
+           Proudly designed by Guillermo Muhana Development</li></h6>
     </div>
   );
 }
+const useStyles = makeStyles((theme) => ({
+
+  root:  {
+
+  }
+}))
 
 export default App;
