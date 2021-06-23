@@ -1,38 +1,54 @@
-import { makeStyles } from "@material-ui/core";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import MyWork from "./components/MyWork";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
+import {
+  createMuiTheme,
+  makeStyles,
+  MuiThemeProvider,
+} from "@material-ui/core";
+import { purple } from "@material-ui/core/colors";
+import React from "react";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import MyWork from "./Components/MyWork";
+import Navbar from "./Components/Navbar";
+import Skills from "./Components/Skills";
+import Web from "./Components/Web";
 
 
-function App() {
+const theme = createMuiTheme({
+  palette: {
+    primary: { main: purple[500] },
+    secondary: { main: "#333" },
+  },
+});
 
+
+const App = () => {
   const classes = useStyles();
-
   return (
-    <div className="Classes.root">
-    
-        <Navbar  /> 
+    <MuiThemeProvider theme={theme}>
+      <div className={classes.root}>
+        <Navbar />
+        <About title="Sobre mi" dark={true} id="about" />
 
-        <About  id="about" dark={true}/>
+        <Skills title="Mis habilidades" dark={false} id="skills" />
 
-        <MyWork title="Mis trabajos"id="works"dark={false}/>
+        {/*<MyWork title="Mis trabajos" dark={true} id="work" />*/}
+
+        <Contact title="Formulario de contacto" dark={false} id="contact" />
+
+        <Web href="https://muhanadesign.com/" />
+
         
-        <Skills title="habilidades"id="skills"dark={true}/>
+      </div>
+      
 
-        <Contact title="Ponerse en contacto"id="contact"dark={false}/>
-        
-        <h6><li>2020 © Copyright MuhanaDesign.  Rights Reserved
-           Proudly designed by Guillermo Muhana Development</li></h6>
-    </div>
+    </MuiThemeProvider>
   );
-}
+};
+
 const useStyles = makeStyles((theme) => ({
-
-  root:  {
-
-  }
-}))
+  root: {
+    width: "100vw",
+  },
+}));
 
 export default App;
