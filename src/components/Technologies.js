@@ -15,7 +15,8 @@ import CSS3 from "../images/CSS3.png";
 import StarRating from "./StarRating";
 import jslogo from "../images/jslogo.png";
 import react from "../images/react.png";
-import redux from "../images/redux.svg";
+import git from "../images/git.png";
+import mat from "../images/mat.png";
 
 const Technologies = () => {
   const classes = useStyles();
@@ -52,8 +53,14 @@ const Technologies = () => {
       stars: 3,
     },
     {
+      year: "2020",
+      src: git,
+      title: "GitHub",
+      stars: 4,
+    },
+    {
       year: "2021",
-      src: react,
+      src: mat,
       title: "Material ui y bootstrap",
       stars: 3,
     },

@@ -1,3 +1,4 @@
+
 import {  Button,  makeStyles,  Paper,  Radio,  TextField,  Typography,} from "@material-ui/core";
 
 import React, { useState } from "react";
@@ -48,8 +49,8 @@ const Contact = ({ title, dark, id }) => {
             <TextField label="Mensaje" />
           </form>
           
-          <Button variant="contained">Enviar</Button>
-         
+          {/*<Button variant="contained">Enviar</Button>*/}
+          <Button><a href="mailto:guillemuhana@gmail.com">enviar</a></Button>
         </Paper>
       </div>
     </div>
@@ -126,7 +127,5 @@ const useStyles = makeStyles((theme) => ({
   },
   
 }));
-
-
 
 export default Contact;

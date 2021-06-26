@@ -1,16 +1,14 @@
-import {
-  createMuiTheme,
-  makeStyles,
-  MuiThemeProvider,
-} from "@material-ui/core";
+import {  createMuiTheme,  makeStyles,  MuiThemeProvider,} from "@material-ui/core";
 import { purple } from "@material-ui/core/colors";
 import React from "react";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
-import MyWork from "./Components/MyWork";
 import Navbar from "./Components/Navbar";
 import Skills from "./Components/Skills";
-import Web from "./Components/Web";
+
+import Footer from "./Components/Footer/Footer";
+
+
 
 
 const theme = createMuiTheme({
@@ -27,7 +25,7 @@ const App = () => {
     <MuiThemeProvider theme={theme}>
       <div className={classes.root}>
         <Navbar />
-        <About title="Sobre mi" dark={true} id="about" />
+        <About title="Sobre mi" dark={false} id="about" />
 
         <Skills title="Mis habilidades" dark={false} id="skills" />
 
@@ -35,7 +33,11 @@ const App = () => {
 
         <Contact title="Formulario de contacto" dark={false} id="contact" />
 
-        <Web href="https://muhanadesign.com/" />
+        
+
+        <Footer />
+
+        
 
         
       </div>

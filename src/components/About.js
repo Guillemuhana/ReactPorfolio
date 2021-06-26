@@ -67,9 +67,9 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
   },
   sectioncontent: {
-    maxWidth: "80vw",
+    maxWidth: "70vw",
     margin: "0 auto",
-    padding: theme.spacing(5),
+    padding: theme.spacing(4),
     "& h3": {
       marginLeft: theme.spacing(3),
     },
@@ -84,17 +84,17 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
   },
   media: {
-    width: "350px",
+    width: "650px",
     height: "auto",
     objectFit: "cover",
-    borderRadius: "10px",
+    borderRadius: "5px",
     margin: theme.spacing(5),
   },
   cardContent: {
     position: "relative",
     marginTop: theme.spacing(3),
     "& h6": {
-      marginTop: theme.spacing(5),
+      marginTop: theme.spacing(4),
       [theme.breakpoints.down("sm")]: {
         display: "none",
       },
@@ -103,8 +103,8 @@ const useStyles = makeStyles((theme) => ({
 
   pdfButton: {
     position: "absolute",
-    bottom: "5rem",
-    right: "4rem",
+    bottom: "2rem",
+    right: "2rem",
     [theme.breakpoints.down("sm")]: {
       bottom: 10,
       right: "1rem",
