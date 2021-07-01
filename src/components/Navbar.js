@@ -31,7 +31,7 @@ import {  AppBar,  Divider,  Drawer,  IconButton,  List,  ListItem,  ListItemIco
           <EmojiObjectsTwoToneIcon fontSize="large" className={classes.light} />
         ),
       },
-      {
+    /*}  {
         id: "work",
         text: "Mis trabajos",
         icon: <BuildTwoToneIcon fontSize="large" />,
@@ -40,8 +40,9 @@ import {  AppBar,  Divider,  Drawer,  IconButton,  List,  ListItem,  ListItemIco
         id: "web",
         text: "Mi web laboral",
         icon: <BuildTwoToneIcon fontSize="large" />,
+        
        
-      },
+      },*/
   
       
       {
@@ -150,7 +151,7 @@ import {  AppBar,  Divider,  Drawer,  IconButton,  List,  ListItem,  ListItemIco
         fontSize: "1.4rem",
         color: "#333",
         fontWeight: "bold",
-        marginLeft: theme.spacing(6),
+        marginLeft: theme.spacing(10),
       },
       "& a:hover": {
         borderBottom: "3px solid #F5FFFA",

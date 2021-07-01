@@ -29,6 +29,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     width: 30%;
+  
   }
   
   .footer-info__name, .footer-info__email, .footer-info__number {
@@ -41,6 +42,8 @@
   
   .footer-info__email, .footer-info__terms {
     text-align: center;
+    text-decoration: aqua;
+    
   }
   
   .footer-info__number, .footer-info__contact {

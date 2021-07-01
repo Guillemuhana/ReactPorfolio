@@ -16,13 +16,13 @@ const About = ({ title, dark, id }) => {
           <CardMedia
             className={classes.media}
             image={imagen2}
-            title="profilepic"
+            title="gmuhana"
           />
           <CardContent className={classes.cardContent}>
             <TypeWriterEffect
               textStyle={{
-                fontSize: "2rem",
-                fontWeight: "700px",
+                fontSize: "1.5rem",
+                fontWeight: "600px",
                 color: "#6495ED",
               }}
               startDelay={100}
@@ -42,7 +42,7 @@ const About = ({ title, dark, id }) => {
              orientada al logro de resultados y a la resolución de las tareas asignadas. 
              Me gusta trabajar en equipo, tengo como virtud la predisposición para aprender, 
              investigar y sobretodo demostrar actitud y ganas de trabajar.
-             Tengo conocimientos en asp.net core, Javascript, html5, php, laravel, css, bootstrap, wordpress y actualmente estudiando mucho React - Material ui
+             Tengo conocimientos en asp.net core, Javascript, html5, php, laravel, css, bootstrap, wordpress y actualmente estudiando mucho React - Material ui.
             </Typography>
           </CardContent>
           <CardActions>
@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   card: {
-    marginTop: theme.spacing(6),
+    marginTop: theme.spacing(5),
     display: "flex",
     height: "70vh",
     position: "relative",
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
 
   pdfButton: {
     position: "absolute",
-    bottom: "2rem",
+    bottom: "1rem",
     right: "2rem",
     [theme.breakpoints.down("sm")]: {
       bottom: 10,

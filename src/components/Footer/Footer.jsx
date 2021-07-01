@@ -37,7 +37,7 @@ function Footer () {
           <section className="footer-info__terms">
             
             <br />
-            Porfolio Desarrollado con React js <br></br>
+            Porfolio Desarrollado en React <br></br>
             y Material ui
             <br></br>
             
@@ -48,14 +48,14 @@ function Footer () {
            ☎: +54 3515931676
           </section>
           <section className="footer-info__contact">
-          <a href="https://muhanadesign.com/" target="_blank" rel="noopener noreferrer">MuhanaDesign.com</a>
+          <a href="https://muhanadesign.com/" target="_blank" rel="noopener noreferrer">www.muhanadesign.com</a>
             <br></br>
-            <a href="https://www.linkedin.com/in/guillermo-muhana-19989b171/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/guillermo-muhana-19989b171/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
 
             <br />
-            <a href="https://muhanadesign.com/contacto/" target="_blank" rel="noopener noreferrer">Contáctame</a>
+            <a href="https://muhanadesign.com/contacto/" target="_blank" rel="noopener noreferrer">🚀Contáctame</a>
             <br></br>
-            <a href="https://mpago.la/2BA2idS" target="_blank" rel="noopener noreferrer">Descarga el codigo fuente</a>
+            <a href="https://mpago.la/2BA2idS" target="_blank" rel="noopener noreferrer">💻Descarga el codigo fuente</a>
           </section>
         </section>
       </section>

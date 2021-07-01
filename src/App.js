@@ -25,11 +25,14 @@ const App = () => {
     <MuiThemeProvider theme={theme}>
       <div className={classes.root}>
         <Navbar />
+
+        
         <About title="Sobre mi" dark={false} id="about" />
+
 
         <Skills title="Mis habilidades" dark={false} id="skills" />
 
-        {/*<MyWork title="Mis trabajos" dark={true} id="work" />*/}
+       
 
         <Contact title="Formulario de contacto" dark={false} id="contact" />
 
